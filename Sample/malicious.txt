@@ -1,0 +1,95 @@
+================================
+   MEOWNITOR — MALWARE REPORT
+================================
+
+   FILE NAME       : malicious.pdf
+   TIME STAMP      : 2026-03-04 17:49:49
+   SIZE (IN BYTES) : 1,449
+
+-- FILE HASHES -----------------
+
+   MD5     : d5c5ed82cd1d1ed196927dd8ee96b290
+   SHA1    : dcaadf26a6f21b5ff1fa4abe43e6101fa3664bb2
+   SHA256  : 558bc427d6caef9c469548f08b433974fe7d59a1cefc0a4120b8e1adf3640f7f
+
+-- VIRUSTOTAL ------------------
+
+   Status  : VirusTotal API Key Invalid or Missing.
+
+-- RISK SCORE ------------------
+
+   Score : 100   [CRITICAL]
+   Score Breakdown:
+
+   +20  High Severity Keyword: /JavaScript (x1)
+   +20  High Severity Keyword: /JS (x1)
+   +18  High Severity Keyword: /OpenAction (x1)
+   +20  High Severity Keyword: /AA (x1)
+   +20  High Severity Keyword: /EmbeddedFile (x1)
+   +20  High Severity Keyword: /AcroForm (x2)
+   +15  JavaScript Obfuscation: 'eval()' [ Dynamic Code Execution ]
+   +15  JavaScript Obfuscation: 'unescape()' [ String Decoding ]
+
+-- METADATA --------------------
+
+   page_count          : 1
+   /Author             : 
+   /CreationDate       : D:20081201120000
+   /Creator            : PhishingBuilder 3.0
+   /Producer           : ExploitKit v2.1
+
+   [!] ANOMALY: Possibly Generated Automatically
+
+-- OBJECT ENUMERATION ----------
+
+   Total Objects   : 0
+   Streams         : 0
+   Embedded Files  : 0
+
+
+-- SUSPICIOUS KEYWORDS ---------
+
+   [ High   ] /JavaScript              Count = 1
+   [ High   ] /JS                      Count = 1
+   [ High   ] /OpenAction              Count = 1
+   [ High   ] /AA                      Count = 1
+   [ High   ] /EmbeddedFile            Count = 1
+   [ High   ] /AcroForm                Count = 2
+   [ Low    ] /Author                  Count = 1
+   [ Low    ] /Producer                Count = 1
+   [ Low    ] /Creator                 Count = 1
+
+-- JAVASCRIPT ANALYSIS ---------
+
+   No Embedded JavaScript Streams Found.
+
+   Obfuscation Patterns Detected:
+
+   [!] 'eval()' [ Dynamic Code Execution ]  (x1)
+   [!] 'unescape()' [ String Decoding ]  (x1)
+
+-- INDICATORS OF COMPROMISE ----
+
+  EMAIL:
+
+    - billing@totallylegit-invoices.net
+
+  DOMAIN:
+
+    - totallylegit-invoices.net
+
+-- EXPLOIT DETECTION -----------
+
+   No Known CVE Signatures Matched.
+
+-- MITIGATION RECOMMENDATIONS --
+
+   1. Block or Quarantine (High Severity Keywords)
+   2. Disable JavaScript Execution
+   3. De-Obfuscate and Manually Review
+   4. Never Open Unknown PDFs on Production Systems
+   5. Train Users to Recognise Phishing Attachments
+
+================================
+   END OF REPORT
+================================
